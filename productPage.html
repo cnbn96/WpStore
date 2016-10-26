@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Well Played</title>
+	<link rel="icon" type="image/png" href="assets/images/favicon.png">
+	<link rel="stylesheet" href="assets\fonts\fonts-awesome\font-awesome.min.css">
+	<link href="assets\fonts\oswald-fonts.css" rel="stylesheet">
+	<link href="Content\bootstrap.css" rel="stylesheet" />
+	<!--
+    <link rel="stylesheet" href="assets\css\ng-animation.css">
+    <link rel="stylesheet" href="assets\css\app.css">-->
+	<link rel="stylesheet" href="assets\css\appProduct.css">
+	<style>
+		.ng-show {
+			height: 100px;
+		}
+	</style>
+</head>
+
+<body ng-app="app">
+	<div class="page-loader loader"></div>
+
+	<!----BEGIN HEADER ---->
+	<header class="fix-header-bar">
+		<div class="container">
+			<div class="row">
+				<div class="logo col-xs-12 col-lg-3">
+					<a class="header-logo" ui-sref="product"><img src="assets\images\logo-icon.png" alt="SAMPLELOGO"></a>
+				</div>
+				<div class="search-bar form-group col-xs-12 col-lg-5">
+					<div class="search-box">
+						<input type="text" class="search-input" placeholder="Search">
+						<div class="autocomplete-products">
+							<ul class="autocomplete-list">
+								<li class="item">
+									<div class="product">
+										<div class="image">
+											<img src="assets/images/mouse1.png" alt="RIVAL 700">
+										</div>
+										<div class="details">
+											<ul>
+												<li><span class="brand">Steelseries</span></li>
+												<li><span class="name">Rival 700</span></li>
+												<li><span class="price">2,390,000</span></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="item">
+									<div class="product">
+										<div class="image">
+											<img src="assets/images/razer-pad.png" alt="RIVAL 700">
+										</div>
+										<div class="details">
+											<ul>
+												<li><span class="brand">Steelseries</span></li>
+												<li><span class="name">Rival 700</span></li>
+												<li><span class="price">2,390,000</span></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="item">
+									<div class="product">
+										<div class="image">
+											<img src="assets/images/fiio.jpg" alt="RIVAL 700">
+										</div>
+										<div class="details">
+											<ul>
+												<li><span class="brand">Steelseries</span></li>
+												<li><span class="name">Rival 700</span></li>
+												<li><span class="price">2,390,000</span></li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<button><span class="search-icon">
+                        <img src="assets\images\search-icon.png">
+                    </span></button>
+
+				</div>
+				<div class="cart-hotline-cash col-xs-12 col-lg-4">
+					<div class="cart left">
+						<a href="#"><img src="assets\images\cart-icon.png" alt="CART"></a>
+						<span class="number-cart">1</span>
+					</div>
+					<div class="hotline-cash right">
+						<div class="hotline">
+							<i class="fa fa-comments-o"></i>
+							<div class="text">
+								<span class="title">
+                                Hotline <br>
+                            </span>
+								<span class="number">
+                                01203214160
+                            </span>
+							</div>
+						</div>
+						<div class="cash">
+							<i class="fa fa-truck"></i>
+							<div class="text">
+								<span class="title">Cash on<br>Delivery 
+                                </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!----END HEADER ---->
+
+	<!----BEGIN MAIN-CONTENT ---->
+	<div class="main-views">
+		<div class="main-content">
+			<div class="main-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-lg-3">
+							<div class="vertical-category-menu">
+								<h4 class="title">
+									<span class="left">
+                            <i class="fa fa-bars"></i>
+                        </span>
+									<span class="title-menu">
+                            CATEGORIES
+                        </span>
+								</h4>
+								<ul class="category-menu-list-item">
+									<li class="category-item">
+										<h3 class="menu-title-zone">
+											<span class="cate-icon"><img src="assets\images\svg-icon\headphone-black.svg" alt=""></span>
+											<span class="cate-text ng-binding">Audio</span>
+										</h3>
+										<a href="javascript:;" class="toggle-nav">
+											<span class="fa show-nav fa-chevron-down"></span>
+										</a>
+										<div class="category-mega-list">
+											<div class="row">
+												<div class="group-item">
+													<a href="/audio-brands" class="view-by-brand"><span class="title">VIEW ALL BRANDS</span></a>
+												</div>
+											</div>
+											<div class="row">
+												<div class="mega-group col-xs-6 col-sm-6 col-md-6 col-lg-3">
+													<h4 class="title">
+														<a href="#" class="ng-binding">HEADPHONES</a>
+													</h4>
+													<ul class="list-mega">
+														<li class="item ">
+															<a sref="fullsize-headphone"></a>
+															<i class="fa fa-chevron-right"></i>
+															<span class="text ng-binding">Fullsize Headphone</span>
+														</li>
+														<li class="item ">
+															<a sref="inear-headphone"></a>
+															<i class="fa fa-chevron-right"></i>
+															<span class="text ng-binding">Inear Headphone</span>
+														</li>
+														<li class="item">
+															<a sref="earbud-headphone"></a>
+															<i class="fa fa-chevron-right"></i>
+															<span class="text ng-binding">Earbud Headphone</span>
+														</li>
+														<li class="item ng-scope">
+															<a sref="portable-headphone"></a>
+															<i class="fa fa-chevron-right"></i>
+															<span class="text ng-binding">Portable Headphone</span>
+														</li>
+														<li class="item ng-scope">
+															<a sref="bluetooth-headphone"></a>
+															<i class="fa fa-chevron-right"></i>
+															<span class="text ng-binding">bluetooth Headphone</span>
+														</li>
+													</ul>
+												</div>
+
+											</div>
+										</div>
+									</li>
+									<li class="category-item">
+										<h3 class="menu-title-zone">
+
+											<span class="cate-icon"><img src="assets\images\svg-icon\speaker-black.svg" alt=""></span>
+											<span class="cate-text ng-binding">Speaker</span>
+										</h3>
+										<a href="javascript:;" class="toggle-nav">
+											<span class="fa show-nav fa-chevron-down"></span>
+										</a>
+									</li>
+									<li class="category-item">
+										<h3 class="menu-title-zone">
+											<span class="cate-icon"><img src="assets\images\svg-icon\desktop-black.svg" alt=""></span>
+											<span class="cate-text ng-binding">Computer</span>
+
+										</h3>
+										<a href="javascript:;" class="toggle-nav">
+											<span class="fa show-nav fa-chevron-down"></span>
+										</a>
+									</li>
+									<li class="category-item">
+										<h3 class="menu-title-zone">
+											<span class="cate-icon"><img src="assets\images\svg-icon\gamepad-black.svg" alt=""></span>
+											<span class="cate-text ng-binding">Gaming Gear</span>
+
+										</h3>
+										<a href="javascript:;" class="toggle-nav">
+											<span class="fa show-nav fa-chevron-down"></span>
+										</a>
+									</li>
+									<li class="category-item">
+										<h3 class="menu-title-zone">
+											<span class="cate-icon"><img src="assets\images\svg-icon\gift-box-black.svg" alt=""></span>
+											<span class="cate-text ng-binding">Promotion</span>
+
+										</h3>
+									</li>
+									<li class="category-item">
+										<h3 class="menu-title-zone">
+											<span class="cate-icon"><img src="assets\images\svg-icon\person-black.svg" alt=""></span>
+											<span class="cate-text ng-binding">Contacts</span>
+										</h3>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-lg-9">
+							<div class="tags">
+								<a href="home">
+                        Home
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </a>
+								<a href="category">
+                        Gaming Gear
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </a>
+								<a href="brand">
+                        Steelseries
+                        <span class="arrow">
+                            <i class="fa fa-chevron-right"></i>
+                        </span>
+                    </a>
+								<a href="product">
+                        Rival 700
+                    </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-3 col-lg-3">
+						<div class="col-left">
+							<div class="left-cat">
+								<a href="javascript:;" class="toggle-sidebar active">
+									<span class="fa fa-th-list show-nav toggle-sidebar-title"></span>
+									<span>Categories</span>
+								</a>
+								<div class="sidebar">
+									<h4 class="title-sidebar">
+										MENU PRODUCTS
+									</h4>
+									<div class="panel-group">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title active">
+													<span class="fa fa-plus-square" data-toggle="collapse" data-target="#collapse2"></span>
+													<a href="#">Gaming Gear</a>
+												</h4>
+											</div>
+											<div id="collapse2" class="tab-panel panel-collapse collapse in">
+												<div class="panel-body">
+													<ul class="sub-parent">
+														<li class="has-sub active">
+															<span class="fa fa-check-square"></span>
+															<a href="#">Gaming Mice</a>
+															<ul class="sub-child">
+																<li><a href="#">Wired Mice</a></li>
+																<li><a href="#">Wireless Mice</a></li>
+																<li><a href="#">Office Mice</a></li>
+															</ul>
+														</li>
+														<li class="has-sub">
+															<span class="fa fa-square-o"></span>
+															<a href="#">Gaming Mice</a>
+															<ul class="sub-child">
+																<li><a href="#">Wired Mice</a></li>
+																<li><a href="#">Wireless Mice</a></li>
+																<li><a href="#">Office Mice</a></li>
+															</ul>
+														</li>
+														<li class="has-sub">
+															<span class="fa fa-square-o"></span>
+															<a href="#">Gaming Mice</a>
+															<ul class="sub-child">
+																<li><a href="#">Wired Mice</a></li>
+																<li><a href="#">Wireless Mice</a></li>
+																<li><a href="#">Office Mice</a></li>
+															</ul>
+														</li>
+														<li class="has-sub">
+															<span class="fa fa-square-o"></span>
+															<a href="#">Gaming Mice</a>
+															<ul class="sub-child">
+																<li><a href="#">Wired Mice</a></li>
+																<li><a href="#">Wireless Mice</a></li>
+																<li><a href="#">Office Mice</a></li>
+															</ul>
+														</li>
+														<li class="has-sub">
+															<span class="fa fa-square-o"></span>
+															<a href="#">Gaming Mice</a>
+															<ul class="sub-child">
+																<li><a href="#">Wired Mice</a></li>
+																<li><a href="#">Wireless Mice</a></li>
+																<li><a href="#">Office Mice</a></li>
+															</ul>
+														</li>
+														<li class="has-sub">
+															<span class="fa fa-square-o"></span>
+															<a href="#">Gaming Mice</a>
+															<ul class="sub-child">
+																<li><a href="#">Wired Mice</a></li>
+																<li><a href="#">Wireless Mice</a></li>
+																<li><a href="#">Office Mice</a></li>
+															</ul>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="left-brands">
+								<a href="javascript:;" class="toggle-sidebar">
+									<span class="fa fa-th-list show-nav toggle-sidebar-title"></span>
+									<span>Brands</span>
+								</a>
+								<div class="sidebar">
+									<h4 class="title-sidebar">
+										BRANDS
+									</h4>
+									<ul class="brands">
+										<li>
+											<i class="fa fa-square-o"></i>
+											<a href="#" title="Corsair">Corsair</a>
+										</li>
+										<li>
+											<i class="fa fa-square-o"></i>
+											<a href="#" title="MSI">MSI</a>
+										</li>
+										<li>
+											<i class="fa fa-square-o"></i>
+											<a href="#" title="Ozone">Ozone</a>
+										</li>
+										<li>
+											<i class="fa fa-square-o"></i>
+											<a href="#" title="Logitech">Logitech</a>
+										</li>
+										<li class="active">
+											<i class="fa fa-check-square"></i>
+											<a href="#" title="Steelseries">Steelseries</a>
+										</li>
+										<li>
+											<i class="fa fa-square-o"></i>
+											<a href="#" title="Corsair">Corsair</a>
+										</li>
+										<li>
+											<i class="fa fa-square-o"></i>
+											<a href="#" title="MSI">MSI</a>
+										</li>
+										<li>
+											<i class="fa fa-square-o"></i>
+											<a href="#" title="Ozone">Ozone</a>
+										</li>
+										<li>
+											<i class="fa fa-square-o"></i>
+											<a href="#" title="Logitech">Logitech</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="suggest-products">
+								<h4 class="title">
+									MORE LIKE THIS
+								</h4>
+								<ul class="suggest-list">
+									<li class="suggest-item">
+										<figure class="text-center">
+											<a href="#" class="center-block" title="zzzz">
+												<img src="assets/images/mouse1.png" alt="KEYBOARD" class="card-item-img">
+											</a>
+											<figcaption>
+												<h3>DAS KEYBOARD</h3>
+												<div class="name">
+													<span>Division Zero M50</span>
+												</div>
+												<div class="price">
+													<span class="price-number">2,000,000 ₫</span>
+												</div>
+											</figcaption>
+										</figure>
+									</li>
+									<li class="suggest-item">
+										<figure class="text-center">
+											<a href="#" class="center-block" title="zzzz">
+												<img src="assets/images/mouse1.png" alt="KEYBOARD" class="card-item-img">
+											</a>
+											<figcaption>
+												<h3>DAS KEYBOARD</h3>
+												<div class="name">
+													<span>Division Zero M50</span>
+												</div>
+												<div class="price">
+													<span class="price-number">2,000,000 ₫</span>
+												</div>
+											</figcaption>
+											<span class="info text-center" ng-if="product.status">NEW</span>
+										</figure>
+									</li>
+									<li class="suggest-item">
+										<figure class="text-center">
+											<a href="#" class="center-block" title="zzzz">
+												<img src="assets/images/mouse1.png" alt="KEYBOARD" class="card-item-img">
+											</a>
+											<figcaption>
+												<h3>DAS KEYBOARD</h3>
+												<div class="name">
+													<span>Division Zero M50</span>
+												</div>
+												<div class="price">
+													<span class="price-number">2,000,000 ₫</span>
+												</div>
+											</figcaption>
+											<span class="info text-center" ng-if="product.status">NEW</span>
+										</figure>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-9 col-lg-9">
+						<div class="col-right">
+							<div class="product-detail">
+								<div class="row">
+									<div class="col-xs-12 col-md-7 col-lg-7">
+										<div class="product-image text-center">
+											<div class="zoom-image">
+												<a href="#">
+													<img id="img1" class="image-zoom-elevate" data-zoom-image="assets/images/rival-700-big3.jpg" src="assets/images/rival-700-big3.jpg"
+														alt="razer pad">
+												</a>
+											</div>
+											<div id="gallery_01" class="owl-image" data-navigation="crsl-owl-control">
+												<div class="crsl-items">
+													<ul class="owl-group crsl-wrap">
+														<li class="item crsl-item">
+															<a class="owl-item " href="javascript:void(0);" data-image="assets/images/rival-700-big3.jpg" data-zoom-image="assets/images/rival-700-big3.jpg"><img id="img1" src="assets/images/rival-700-big3.jpg" alt="Mouse1"></a>
+														</li>
+														<li class="item crsl-item">
+															<a class="owl-item" href="javascript:void(0);" data-image="assets/images/rival-700-big2.jpg" data-zoom-image="assets/images/rival-700-big2.jpg"><img id="img1" src="assets/images/rival-700-big2.jpg" alt="Mouse1"></a>
+														</li>
+														<li class="item crsl-item">
+															<a class="owl-item" href="javascript:void(0);" data-image="assets/images/rival-700-big1.jpg" data-zoom-image="assets/images/rival-700-big1.jpg"><img id="img1" src="assets/images/rival-700-big1.jpg" alt="Mouse1"></a>
+														</li>
+														<li class="item crsl-item">
+															<a class="owl-item" href="javascript:void(0);" data-image="assets/images/rival-700-big2.jpg" data-zoom-image="assets/images/rival-700-big2.jpg"><img id="img1" src="assets/images/rival-700-big2.jpg" alt="Mouse1"></a>
+														</li>
+														<li class="item crsl-item">
+															<a class="owl-item" href="javascript:void(0);" data-image="assets/images/rival-700-big2.jpg" data-zoom-image="assets/images/rival-700-big2.jpg"><img id="img1" src="assets/images/rival-700-big2.jpg" alt="Mouse1"></a>
+														</li>
+													</ul>
+												</div>
+												<div class="slidernav slider-controls text-center">
+													<div id="crsl-owl-control" class="clearfix">
+														<a href="#" class="previous btn-prev left">
+															<i class="fa fa-chevron-left"></i>
+														</a>
+														<a href="#" class="next btn-next right">
+															<i class="fa fa-chevron-right"></i>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-5 col-lg-5">
+										<h4 class="product-title">
+											Steelseries Rival 700
+										</h4>
+										<div class="product-content">
+											<div class="detail">
+												<table>
+													<tbody>
+														<tr>
+															<td class="title" style="padding-right:10px">Brand:</td>
+															<td class="brand"><a href="#">Steelseries</a></td>
+														</tr>
+														<tr>
+															<td class="title">Guarantee:</td>
+															<td>12 months</td>
+														</tr>
+														<tr>
+															<td class="title">Colors:</td>
+															<td class="colors">
+																<span class="color" style="background-color: black;"></span>
+																<span class="color" style="background-color: white;"></span>
+															</td>
+														</tr>
+														<tr>
+															<td class="title">Retail price:</td>
+															<td class="price">2,390,000 ₫</td>
+														</tr>
+
+													</tbody>
+
+												</table>
+												<div class="add-order-submit">
+													<div class="row">
+														<div class="add-box col-xs-6">
+															<button type="button" class="action-btn add-btn">ADD TO CART</button>
+															<div class="tips">
+																<img src="assets/images/arrow1.png" alt="HOW TO BUY">
+																<div class="how-to">
+																	<a href="#">
+																		<i class="fa fa-cart-plus"></i>
+																		<span class="text">How to buy</span>
+																	</a>
+																</div>
+															</div>
+														</div>
+														<div class="order-box col-xs-6">
+															<button type="button" class="action-btn order-btn">BUY NOW</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="actions">
+											<a href="#" class="order-fb"><i class="fa fa-facebook-square"></i>Order OR Message Us NOW!</a>
+											<div class="rating text-center">
+												<span class="star">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                        </span>
+												<span class="point">
+                                            4.1 out of 5
+                                        </span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="specifications">
+								<ul class="nav nav-tabs">
+									<li class="nav-item active"><a class="nav-link" href="#specification" data-toggle="tab">Specifications</a></li>
+									<li class="nav-item"><a class="nav-link" href="#soft-suport" data-toggle="tab">Soft Suport</a></li>
+								</ul>
+								<div class="tab-content">
+									<div id="specification" class="tab-pane tab-item fade in active">
+										<div class="row product-spec-container">
+											<div class="col col-sm-6 product-spec__info">
+												<h3 class="product-spec__subtitle">DESIGN</h3>
+												<ul class="spec__list">
+													<li class="spec__list-item">Material: Matte Top Cover</li>
+													<li class="spec__list-item">Ergonomic, Right-Handed</li>
+													<li class="spec__list-item">Grip Style: Palm, Claw, and Fingertip</li>
+													<li class="spec__list-item">Number of Buttons: 7</li>
+													<li class="spec__list-item">SteelSeries Switches: Rated for 30 Million Clicks</li>
+													<li class="spec__list-item">Reinforced Left and Right Clicks</li>
+													<li class="spec__list-item">Weight: 135g, 0.3lbs</li>
+													<li class="spec__list-item">Height: 124.85mm, 4.92in</li>
+													<li class="spec__list-item">Width: 68.46mm, 2.70 in</li>
+													<li class="spec__list-item">Depth: 41.97mm, 1.65in</li>
+													<li class="spec__list-item">Short cable length (non-braided): 1m, 3.28 ft</li>
+													<li class="spec__list-item">Long cable length (braided): 2m, 6.5 ft</li>
+												</ul>
+											</div>
+										</div>
+										<hr class="seperator--spec" />
+										<div class="row product-spec-container">
+											<div class="col col-sm-6 product-spec__info">
+												<h3 class="product-spec__subtitle">SENSOR</h3>
+												<ul class="spec__list">
+													<li class="spec__list-item">Sensor Name: PixArt PMW3360</li>
+													<li class="spec__list-item">Sensor Type: Optical</li>
+													<li class="spec__list-item">CPI: 100 to 16,000</li>
+													<li class="spec__list-item">IPS: 300</li>
+													<li class="spec__list-item">Acceleration: 50g</li>
+													<li class="spec__list-item">Polling Rate: 1 ms (1000 Hz)</li>
+													<li class="spec__list-item">Zero Hardware Acceleration</li>
+													<li class="spec__list-item">Tracking Accuracy: 1:1<br /><br /></li>
+												</ul>
+											</div>
+										</div>
+										<hr class="seperator--spec" />
+										<div class="row product-spec-container">
+											<div class="col col-sm-6 product-spec__info">
+												<h3 class="product-spec__subtitle">CUSTOMIZATION OPTIONS</h3>
+												<ul class="spec__list">
+													<li class="spec__list-item">Gamesense Support</li>
+													<li class="spec__list-item">OLED Display Customization</li>
+													<li class="spec__list-item">Tactile Alert Customization</li>
+													<li class="spec__list-item">SteelSeries Engine Support: SSE3</li>
+													<li class="spec__list-item">Multiple CPI Options</li>
+													<li class="spec__list-item">Programmable Buttons</li>
+													<li class="spec__list-item">Onboard Profile Storage</li>
+													<li class="spec__list-item">Acceleration Customization</li>
+													<li class="spec__list-item">Deceleration Customization</li>
+													<li class="spec__list-item">Color Options: 16.8 Million</li>
+													<li class="spec__list-item"><a href="https://steelseries.com/gaming-accessories/rival-700-laser-9800-module">Swappable Pixart 9800 Laser Sensor</a></li>
+													<li class="spec__list-item"><a href="https://steelseries.com/gaming-accessories/rival-700-cover-pack-1">Swappable Rival 700 Top Cover Pack</a></li>
+													<li class="spec__list-item">Printable 3-D Nameplate / <strong><a href="https://steelseries.com/rival700nameplate">Download 3D Files</a></strong></li>
+												</ul>
+											</div>
+											<div class="col col-sm-6 product-spec__icons">
+												<div>&nbsp;</div>
+											</div>
+										</div>
+										<hr class="seperator--spec" />
+										<div class="row product-spec-container">
+											<div class="col col-sm-6 product-spec__info">
+												<h3 class="product-spec__subtitle">BOX CONTENT</h3>
+												<ul class="spec__list">
+													<li class="spec__list-item">Rival 700</li>
+													<li class="spec__list-item">Braided Long Cable</li>
+													<li class="spec__list-item">Soft PVC Short Cable</li>
+													<li class="spec__list-item">Quick Start Guide</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div id="soft-suport" class="tab-pane tab-item fade">
+										SOFT SUPORT TAB
+									</div>
+								</div>
+							</div>
+							<div class="rating-and-reviews">
+								<ul class="nav nav-tabs">
+									<li class="nav-item active"><a href="#rating" data-toggle="tab" class="nav-link">Rating & Reviews</a></li>
+									<li class="nav-item"><a href="#write-review" data-toggle="tab" class="nav-link"><i class="fa fa-pencil-square-o"></i> Write Your Review</a></li>
+								</ul>
+								<div class="tab-content">
+									<div id="rating" class="tab-pane tab-item fade in active">
+										<div class="row">
+											<div class="col-xs-12 col-md-5 col-lg-5">
+												<div class="statistics-reviews">
+													<h3 class="title">Customers Reviews on Product</h3>
+													<div class="star-rating">
+														<span class="star">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star-half-o"></i>
+                                                </span>
+														<span class="point">4.1 out of 5</span>
+													</div>
+													<div class="rating-bar">
+														<div class="rating-bar-list-item">
+															<span class="rating-label">Delighted</span>
+															<span class="rating-bar-line"><span class="rating-statistic" style="width: 50%"></span></span>
+															<span class="rating-bar-count">21</span>
+														</div>
+														<div class="rating-bar-list-item">
+															<span class="rating-label">Above Expectations</span>
+															<span class="rating-bar-line">
+                                                        <span class="rating-statistic" style="width: 21%"></span>
+															</span>
+															<span class="rating-bar-count">9</span>
+														</div>
+														<div class="rating-bar-list-item">
+															<span class="rating-label">Satisfied</span>
+															<span class="rating-bar-line"><span class="rating-statistic" style="width: 16%"></span></span>
+															<span class="rating-bar-count">7</span>
+														</div>
+														<div class="rating-bar-list-item">
+															<span class="rating-label">Below Average</span>
+															<span class="rating-bar-line"><span class="rating-statistic" style="width: 0.1%"></span></span>
+															<span class="rating-bar-count">1</span>
+														</div>
+														<div class="rating-bar-list-item">
+															<span class="rating-label">Disappointed</span>
+															<span class="rating-bar-line"><span class="rating-statistic" style="width: 0.7%"></span></span>
+															<span class="rating-bar-count">3</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-7 col-lg-7">
+												<div class="reviews-detail">
+													<h3 class="title">Customers Reviews (Total 42)</h3>
+													<ul class="reviews-panel">
+														<li class="review">
+															<div class="rev-star">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star-half-o"></i>
+															</div>
+															<div class="rev-content">GOOD!</div>
+															<div class="rev-author">by Ty lùi</div>
+														</li>
+														<li class="review">
+															<div class="rev-star">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star-half-o"></i>
+															</div>
+															<div class="rev-content">GOOD!</div>
+															<div class="rev-author">by Ty lùi</div>
+														</li>
+														<li class="review">
+															<div class="rev-star">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star-half-o"></i>
+															</div>
+															<div class="rev-content">GOOD!</div>
+															<div class="rev-author">by Ty lùi</div>
+														</li>
+														<li class="review">
+															<div class="rev-star">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star-half-o"></i>
+															</div>
+															<div class="rev-content">GOOD!</div>
+															<div class="rev-author">by Ty lùi</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="write-review" class="tab-pane tab-item fade">
+										<h3 class="title">Please help us with your experience about this product</h3>
+										<div class="rate">
+											<span class="star">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </span>
+											<img src="assets/images/arrow2.png" alt="">
+											<h4 class="text"> Click to rate</h4>
+										</div>
+										<div class="review-form">
+											<form action="">
+												<label for="description" class="title-description">Review description (*)</label>
+												<textarea class="review-description" name="description" placeholder="Type description here" rows="3"></textarea>
+												<label for="author">Posted by</label>
+												<input type="text" name="author" class="review-author" placeholder="Type your name">
+												<div class="review-submit">
+													<button type="submit" class="submit-button">Submit Review <img src="assets/images/arrow4.png" alt=""></button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="comments">
+								<ul class="nav nav-tabs">
+									<li class="nav-item active"><a href="#comments" data-toggle="tab" class="nav-link"><i class="fa fa-comments"></i> Comments</a></li>
+
+								</ul>
+								<div class="tab-content">
+									<div id="comments" class="tab-pane tab-item fade in active">
+										COMMENT IN HERE
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	</div>
+
+
+	<!---- BEGIN FEATURES ---->
+	<div class="features">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="feature ">
+						<a href="#">
+							<em class="fa fa-truck text-center"></em>
+							<h4>Shipping Fee</h4>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="feature">
+						<a href="#">
+							<em class="fa fa-credit-card-alt text-center"></em>
+							<h4>Payment Methods</h4>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="feature">
+						<a href="#">
+							<em class="fa fa-wrench text-center"></em>
+							<h4>Warranty Policy</h4>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6 col-lg-3">
+					<div class="feature last-child">
+						<a href="#">
+							<em class="fa fa-cogs text-center"></em>
+							<h4>Repair Services</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!---- END FEATURES ------>
+
+	<!---- BEGIN FOOTER ---->
+	<footer class="footer">
+		<div class="footer-email">
+			<div class="container">
+				<div class="row">
+					<div class="footer-wrap">
+						<div class="form-email col-xs-12 col-lg-9">
+							<div class="row">
+								<form action="" class="form-horizontal">
+									<div class="form-group ">
+										<label for="email" class="control-label col-xs-12 col-lg-6">GET THE LASTEST GEARS & MORE</MORE></label>
+										<div class="input-group col-xs-12 col-lg-6">
+											<input type="email" class="form-control" id="subemail" placeholder="Enter E-Mail Address">
+											<button type="submit" class="sign-up-btn">Sign Up</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="address col-xs-12 col-lg-3 text-center">
+							<i class="fa fa-map-marker"></i>
+							<h4>Address</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="footer-wrap">
+					<div class="main-column col-xs-6 col-lg-3">
+						<ul class="list-items">
+							<h3 class="title"><a href="#">Audio</a></h3>
+							<li class="item"><a href="#">Headphone</a></li>
+							<li class="item"><a href="#">DAC / Headamp</a></li>
+							<li class="item"><a href="#">Music Players</a></li>
+							<li class="item"><a href="#">Audio Accessories</a></li>
+						</ul>
+					</div>
+					<div class="main-column col-xs-6 col-lg-3">
+						<ul class="list-items">
+							<h3 class="title"><a href="#">Computer</a></h3>
+							<li class="item"><a href="#">Gaming Laptops</a></li>
+							<li class="item"><a href="#">Gaming Desktops</a></li>
+							<li class="item"><a href="#">Monitors</a></li>
+							<li class="item"><a href="#">Computer Accessories</a></li>
+						</ul>
+					</div>
+					<div class="main-column col-xs-6 col-lg-3">
+						<ul class="list-items">
+							<h3 class="title"><a href="#">Gaming Gear</a></h3>
+							<li class="item"><a href="#">Gaming Keyboards</a></li>
+							<li class="item"><a href="#">Gaming Mice</a></li>
+							<li class="item"><a href="#">Gaming Headsets</a></li>
+							<li class="item"><a href="#">Gaming Mousepads</a></li>
+						</ul>
+					</div>
+					<div class="main-column col-xs-6 col-lg-3">
+						<ul class="list-items">
+							<h3 class="title"><a href="#">Speaker</a></h3>
+							<li class="item"><a href="#">Portable Speakers</a></li>
+							<li class="item"><a href="#">Computer Speakers</a></li>
+							<li class="item"><a href="#">Soundbar Speakers</a></li>
+							<li class="item"><a href="#">Speaker Accessories</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="social-testimonials">
+					<div class="social col-xs-12 col-lg-6">
+						<h3 class="title">Follow us on <a href="#">Social Networks</a></h3>
+						<ul>
+							<li>
+								<h4>On Facebook</h4>
+								<div class="fb-page" data-href="https://www.facebook.com/LoLBestVideosFanpage/" data-width="550" data-height="450" data-small-header="false"
+									data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+									<blockquote cite="https://www.facebook.com/LoLBestVideosFanpage/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LoLBestVideosFanpage/">League of Legends Best Video</a></blockquote>
+								</div>
+							</li>
+							<li>
+								<h4>On Instagram</h4>
+								<div id="instagram">
+									<a class="feedaz" href="https://www.instagram.com/p/BJiT7LCDsAr/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14099739_290187534692169_988430375_n.jpg?ig_cache_key=MTMyNDcwODg2OTU3ODg2NjczMQ%3D%3D.2"></a>
+									<a class="feedaz" href="https://www.instagram.com/p/BJZhfx9DfR3/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14031616_1791575137733194_242697328_n.jpg?ig_cache_key=MTMyMjIzNTI4NTA4NjI3MDU4Mw%3D%3D.2"></a>
+									<a class="feedaz" href="https://www.instagram.com/p/BJTAoAKjL17/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13687027_633530833494293_729498020_n.jpg?ig_cache_key=MTMyMDQwMTg2NDcwNTc1MjQ0Mw%3D%3D.2"></a>
+									<a class="feedaz" href="https://www.instagram.com/p/BJQZ-_JDQBs/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14072969_596983923838779_902477846_n.jpg?ig_cache_key=MTMxOTY2ODk3MDM4NzQ3MjQ5Mg%3D%3D.2"></a>
+									<a class="feedaz" href="https://www.instagram.com/p/BJLOgRZDOJu/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13712561_1087662207980804_1074417587_n.jpg?ig_cache_key=MTMxODIxMTEwNjI4NDI5ODg2Mg%3D%3D.2"></a>
+									<a class="feedaz" href="https://www.instagram.com/p/BJIt3anDYY0/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13658883_1227483763950108_1255772728_n.jpg?ig_cache_key=MTMxNzUwNDYxMTI0MjU3NTQxMg%3D%3D.2"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="testimonials col-xs-12 col-lg-6">
+						<h3 class="title">Testimonials</h3>
+						<div class="testimonial">
+							<div class="row">
+								<div class="avatar col-xs-3">
+									<img src="assets\images\avatar.jpg" alt="Nam Binh">
+									<span class="author">Nam Bình</span>
+								</div>
+								<div class="text col-xs-9">
+									<blockqoute>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockqoute>
+								</div>
+							</div>
+						</div>
+						<div class="testimonial">
+							<div class="row">
+								<div class="avatar col-xs-3">
+									<img src="assets\images\avatar.jpg" alt="Nam Binh">
+									<span class="author">Nam Bình</span>
+								</div>
+								<div class="text col-xs-9">
+									<blockqoute>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockqoute>
+								</div>
+							</div>
+						</div>
+						<div class="testimonial">
+							<div class="row">
+								<div class="avatar col-xs-3">
+									<img src="assets\images\avatar.jpg" alt="Nam Binh">
+									<span class="author">Nam Bình</span>
+								</div>
+								<div class="text col-xs-9">
+									<blockqoute>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockqoute>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="footer-utility text-center">
+						<ul>
+							<li><a href="#">Home Page</a></li>
+							<li><a href="#">Shipping Fee</a></li>
+							<li><a href="#">Payment Methods</a></li>
+							<li><a href="#">Warranty Policy</a></li>
+							<li><a href="#">Repair Services</a></li>
+							<li><a href="#">Contacts</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="copyright text-center">
+						Copyright © 2016 <a href="http://facebook.com/nguyennambinh11">cnbn96</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!---- END FOOTER ------>
+
+
+
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=1641551249491668";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'))
+    </script>
+
+	<script src="Scripts/jquery-3.1.0.min.js"></script>
+	<script src="Scripts/bootstrap.min.js"></script>
+	<!-- APP ELSE -->
+	<script src="assets/js/responsiveCarousel.min.js"></script>
+	<script src="Scripts/jquery.elevateZoom-3.0.8.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/appProduct.js"></script>
+</body>
+
+</html>

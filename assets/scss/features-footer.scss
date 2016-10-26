@@ -1,0 +1,246 @@
+/*-------------------------------
+--------FEATUREs ----------------
+-------------------------------*/
+
+.features{
+	margin-top: 30px;
+	background-color: $white;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+	padding: 40px;
+	.feature{		
+		border-right: 1px solid $dark-line;
+		em{
+			font-size: 25px;
+			color: $light-blue;
+			border-radius: 50%;
+			line-height: 45px;
+			width:50px;
+			height: 50px;
+			border: solid 1px $dark-line;			
+		}
+		h4{
+			color: $dark;
+			font-size: 20px;
+			display: inline-block;
+			margin-left: 10px;
+		}		
+		&:hover{
+			em{
+				background-color: $light-blue;
+				color: $white;
+			}
+		}
+
+		@media #{$low-tablet}{
+			border-right: none;
+			text-align: left;
+			width: 224px;
+    		margin: 5px auto;
+		}
+	}
+	.last-child{
+		border:none;
+	}	
+}
+
+
+/*-------------------------------
+-----------FOOTER----------------
+-------------------------------*/
+
+.footer{
+	background-color: $white;
+	margin-top: 30px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+	.footer-email{
+		background-color: $dark-blue;
+		padding: 0 30px;
+		.footer-wrap{
+			.form-email{
+				margin: 30px 0;
+				padding-right: 40px;
+				border-right: 1px solid $dark-line;	
+				.form-group{
+					margin: 0;
+					label{
+						font-size: 30px;
+						font-weight: regular;
+						text-align: center;
+						padding: 0;
+						line-height: 55px;						
+					}
+					.input-group{
+						position: relative;
+						input{
+							height: 55px;
+							padding-left: 10px;	
+							font-size: 20px;
+							color: $dark-line;
+							overflow: hidden;						
+						}
+						.sign-up-btn{
+							position: absolute;
+							top: 0;
+							right: 0;
+							z-index: 999;
+							/*padding: 10px 40px;*/
+							padding: 0 20px;
+							height: 100%;
+							font-size: 30px;
+							font-weight: regular;
+							text-decoration: none;
+							color: $white;
+							text-align: center;
+							background-color: #09c3ed;
+						}
+					}
+				}
+
+				@media #{$low-tablet}{
+					border-right: none;
+				}
+				@media #{$smartphone}{
+					label{
+						font-size: 25px !important;
+					}
+				}
+			}
+
+			.address{
+				margin: 30px 0;
+				i{
+					font-size: 51px;
+					color: $white;
+					line-height: 55px;
+				}
+				h4{
+					display: inline-block;
+					margin-left: 10px;
+					font-size: 40px;
+					line-height: 55px;
+				}
+
+				@media #{$low-tablet}{
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+	.footer-wrap{		
+		.main-column{
+			margin-top: 30px;
+			.list-items{
+				.title{					
+					font-size: 25px;
+					font-weight: bold;
+					margin-bottom: 20px;
+					a{
+						color:$dark;
+					}
+				}
+				.item{
+					font-size:18px;
+					font-weight: normal;
+					a{
+						color: $dark-line;
+						&:hover{
+							color: $light-blue;
+						}
+					}
+				}
+			}
+		}
+		
+		@media #{$low-tablet}{
+			text-align: center;
+		}
+	}
+
+	.social-testimonials{
+		margin-top: 30px;
+		.social{
+			margin-top: 30px;
+			.title{
+				text-transform: uppercase;
+				font-size: 25px;
+				font-weight: bold;
+			}
+			ul{
+				li{
+					margin-top: 30px;
+					h4{
+						font-size: 25px;
+						margin-bottom: 20px;
+						margin-left: 20px;												
+					}
+					#instagram{
+						.feedaz{
+							img{
+								width: 32%;
+							}
+						}
+					}
+				}
+			}
+			@media #{$low-tablet}{
+				text-align: center;
+			}
+		}
+
+		.testimonials{
+			margin-top: 30px;
+			.title{
+				text-transform: uppercase;
+				font-size: 25px;
+				font-weight: bold;				
+			}
+			.testimonial{
+				margin: 20px 10px;
+				.avatar{
+					text-align: center;
+					img{
+						border: 2px solid $light-blue;
+						border-radius: 50%;
+					}
+					.author{
+						color: $dark-line;
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-utility{
+		margin-top: 20px;
+		padding-top: 20px;
+		border-top: 1px solid $dark-line;
+		ul{			
+			li{
+				display: inline-block;
+				margin-right: 20px;
+				a{
+					font-size: 18px;
+					color: $dark-line;
+					&:hover{
+						text-decoration: underline;
+						color: $light-blue; 
+					}
+				}
+			}
+		}
+	}
+
+	.copyright{
+		margin: 10px 0;
+		color: $dark-line;
+		a{
+			font-size: 18px;	
+			color: $light-blue;
+			&:hover{
+				color: $dark;
+			}
+		}
+	}
+}
