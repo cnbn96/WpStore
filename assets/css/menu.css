@@ -1,24 +1,32 @@
 /*
-Error: Undefined variable: "$white".
-        on line 26 of assets/scss/header-bar.scss
+Error: Undefined variable: "$dark-blue".
+        on line 3 of assets/scss/menu.scss
 
-21: .fix-header-bar{
-22: 	z-index: 1000;
-23: 	position: fixed;
-24: 	width: 100%;
-25: 	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.45);
-26: 	background-color: $white;
-27: 	.logo{
-28: 		text-align: center;
-29: 		position: relative;
-30: 		height: 73px;
-31: 		> img{
+1: .main-menu{
+2:     .vertical-category-menu{
+3:         background-color: $dark-blue;
+4:         height: 55px;
+5:         color: $white;
+6:         cursor: pointer;/*
+7:         z-index: 1001;*\/
+8:         position: relative;
 
 Backtrace:
-assets/scss/header-bar.scss:26
+assets/scss/menu.scss:3
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -65,4 +73,4 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 26 of assets/scss/header-bar.scss\A \A 21: .fix-header-bar{\A 22: 	z-index: 1000;\A 23: 	position: fixed;\A 24: 	width: 100%;\A 25: 	box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.45);\A 26: 	background-color: $white;\A 27: 	.logo{\A 28: 		text-align: center;\A 29: 		position: relative;\A 30: 		height: 73px;\A 31: 		> img{"; }
+  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 3 of assets/scss/menu.scss\A \A 1: .main-menu{\A 2:     .vertical-category-menu{\A 3:         background-color: $dark-blue;\A 4:         height: 55px;\A 5:         color: $white;\A 6:         cursor: pointer;/*\A 7:         z-index: 1001;*/\A 8:         position: relative;"; }

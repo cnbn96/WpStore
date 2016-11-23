@@ -595,7 +595,7 @@ z-index: 1001;*/
       border: 1px solid #e8e8e8;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4); }
       .main .col-left .sidebar .title-sidebar {
-        font-size: 20px;
+        font-size: 25px;
         color: #09c3ed;
         margin-left: 15px;
         padding-top: 30px; }
@@ -644,14 +644,6 @@ z-index: 1001;*/
                 .main .col-left .sidebar .panel-group .panel .panel-body .sub-parent > li.active::before {
                   font-family: 'FontAwesome';
                   content: ""; }
-      .main .col-left .sidebar .brands {
-        margin-left: 15px; }
-        .main .col-left .sidebar .brands li {
-          margin-top: 10px; }
-          .main .col-left .sidebar .brands li.active {
-            color: #09c3ed; }
-            .main .col-left .sidebar .brands li.active a {
-              color: #09c3ed; }
     .main .col-left .suggest-products {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -705,10 +697,6 @@ z-index: 1001;*/
       .main .col-left .left-cat {
         float: left;
         width: 49%; }
-      .main .col-left .left-brands {
-        float: left;
-        width: 49%;
-        margin-left: 2px; }
       .main .col-left .sidebar {
         display: none;
         width: 98.5%;
@@ -719,252 +707,19 @@ z-index: 1001;*/
         border: 1px solid #b5b5bb;
         box-shadow: none; } }
   .main .col-right {
-    /*---------BEGIN IMAGE DETAIL---------*/
-    /*---------END IMAGE DETAIL---------*/
-    /*---------BEGIN PRODUCT DETAILS---------*/ }
-    .main .col-right .product-detail .product-image {
-      margin-top: 30px; }
-      .main .col-right .product-detail .product-image .zoom-image {
-        max-height: 450px;
-        display: table;
-        transition: all 0.5s linear;
-        position: relative; }
-        .main .col-right .product-detail .product-image .zoom-image a {
-          height: 100%;
-          display: table-cell;
-          vertical-align: middle; }
-          .main .col-right .product-detail .product-image .zoom-image a #img1 {
-            left: 0 !important; }
-        .main .col-right .product-detail .product-image .zoom-image:hover {
-          background-color: rgba(41, 41, 43, 0.3); }
-      .main .col-right .product-detail .product-image .owl-image {
-        position: relative;
-        margin-top: 10px; }
-        .main .col-right .product-detail .product-image .owl-image .owl-group .item a {
-          height: 100%;
-          display: block; }
-        .main .col-right .product-detail .product-image .owl-image .owl-group .item.crsl-active {
-          border: 1px solid #09c3ed; }
-        .main .col-right .product-detail .product-image .owl-image .owl-group .item:hover {
-          border: 1px solid #09c3ed; }
-        .main .col-right .product-detail .product-image .owl-image .slider-controls a {
-          position: absolute;
-          z-index: 8;
-          font-size: 40px;
-          font-weight: 700;
-          color: #999;
-          background-color: transparent; }
-        .main .col-right .product-detail .product-image .owl-image .slider-controls a.previous {
-          left: 0;
-          top: 25px; }
-        .main .col-right .product-detail .product-image .owl-image .slider-controls a.next {
-          right: 0;
-          top: 25px; }
-    .main .col-right .product-title {
-      margin-top: 30px;
-      padding-bottom: 50px;
-      font-size: 35px;
-      line-height: 40px;
-      font-weight: lighter;
-      border-bottom: 1px solid #b5b5bb; }
-    .main .col-right .product-content {
-      font-size: 20px;
-      font-weight: lighter;
-      border-bottom: 1px solid #b5b5bb;
-      padding-bottom: 75px; }
-      .main .col-right .product-content .detail table tr td {
-        padding-right: 40px;
-        padding-top: 10px; }
-        .main .col-right .product-content .detail table tr td.brand a {
-          color: #09c3ed;
-          font-weight: bold; }
-        .main .col-right .product-content .detail table tr td.colors .color {
-          width: 30px;
-          height: 30px;
-          display: inline-block;
-          border: 1px solid #b5b5bb; }
-          .main .col-right .product-content .detail table tr td.colors .color:hover {
-            border: 3px solid #09c3ed; }
-        .main .col-right .product-content .detail table tr td.price {
-          color: #09c3ed;
-          font-size: 30px;
-          font-weight: bold; }
-      .main .col-right .product-content .detail .add-order-submit {
-        font-size: 20px;
-        font-weight: normal; }
-        .main .col-right .product-content .detail .add-order-submit .action-btn {
-          width: 150px;
-          height: 42px;
-          background-color: #09c3ed;
-          color: #fbfbfb;
-          border: none; }
-          .main .col-right .product-content .detail .add-order-submit .action-btn:hover {
-            background-color: #0daed2; }
-        .main .col-right .product-content .detail .add-order-submit .add-box {
-          position: relative; }
-          .main .col-right .product-content .detail .add-order-submit .add-box img {
-            width: 34px;
-            height: 42px; }
-          .main .col-right .product-content .detail .add-order-submit .add-box .tips {
-            position: absolute;
-            left: 90%;
-            top: 100%;
-            width: 34px; }
-            .main .col-right .product-content .detail .add-order-submit .add-box .tips .how-to {
-              margin-left: 17px;
-              width: 100px;
-              position: absolute; }
-              .main .col-right .product-content .detail .add-order-submit .add-box .tips .how-to a i.fa {
-                color: #09c3ed; }
-              .main .col-right .product-content .detail .add-order-submit .add-box .tips .how-to a .text {
-                font-weight: lighter; }
-    .main .col-right .actions {
-      margin-top: 10px; }
-      .main .col-right .actions > .order-fb {
-        font-size: 20px;
-        color: #fbfbfb;
-        line-height: 42px;
-        text-align: center;
-        background-color: #0084ff;
-        height: 42px;
-        width: 230px;
-        display: block; }
-        .main .col-right .actions > .order-fb i {
-          margin-right: 5px; }
-      .main .col-right .actions .rating {
-        margin-top: 40px; }
-        .main .col-right .actions .rating .star {
-          color: #09c3ed;
-          font-size: 30px;
-          font-weight: normal; }
-        .main .col-right .actions .rating .point {
-          margin-left: 20  px;
-          font-size: 19px; }
-  .main .nav-tabs {
-    border-bottom: none; }
-    .main .nav-tabs .nav-item {
-      margin-left: 10px; }
-      .main .nav-tabs .nav-item.active .nav-link {
-        background-color: #09c3ed;
-        color: white;
-        font-size: 20px;
-        text-align: center;
-        border-radius: 2px;
-        border: none; }
-  .main .tab-content {
-    border: 1px solid #b5b5bb; }
-    .main .tab-content .tab-item {
-      margin: 30px; }
-      @media (max-width: 1199px) {
-        .main .tab-content .tab-item {
-          margin: 30px 15px; } }
-  .main .specifications {
-    margin-top: 30px; }
-  .main .rating-and-reviews {
-    margin-top: 30px; }
-    .main .rating-and-reviews .tab-content #rating .statistics-reviews .title {
-      font-size: 20px; }
-    .main .rating-and-reviews .tab-content #rating .statistics-reviews .star-rating {
-      margin-top: 30px; }
-      .main .rating-and-reviews .tab-content #rating .statistics-reviews .star-rating .star {
-        color: #09c3ed;
-        font-size: 30px;
-        font-weight: normal; }
-      .main .rating-and-reviews .tab-content #rating .statistics-reviews .star-rating .point {
-        margin-left: 5px;
-        font-size: 19px; }
-    .main .rating-and-reviews .tab-content #rating .statistics-reviews .rating-bar {
-      margin-top: 30px; }
-      .main .rating-and-reviews .tab-content #rating .statistics-reviews .rating-bar .rating-bar-list-item {
-        font-size: 17px;
-        display: table-row;
-        border-spacing: 3px; }
-        .main .rating-and-reviews .tab-content #rating .statistics-reviews .rating-bar .rating-bar-list-item .rating-label {
-          display: table-cell;
-          padding-right: 5px;
-          padding-bottom: 5px; }
-        .main .rating-and-reviews .tab-content #rating .statistics-reviews .rating-bar .rating-bar-list-item .rating-bar-line {
-          display: inline-block;
-          height: 17px;
-          width: 150px;
-          background-color: #e8e8e8; }
-          .main .rating-and-reviews .tab-content #rating .statistics-reviews .rating-bar .rating-bar-list-item .rating-bar-line .rating-statistic {
-            display: inline-block;
-            background-color: #09c3ed;
-            height: 17px; }
-        .main .rating-and-reviews .tab-content #rating .statistics-reviews .rating-bar .rating-bar-list-item .rating-bar-count {
-          display: table-cell;
-          padding-left: 5px;
-          padding-bottom: 5px; }
-    .main .rating-and-reviews .tab-content #rating .reviews-detail .title {
-      font-size: 20px; }
-    .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel {
-      margin-top: 10px;
-      height: 240px;
-      max-height: 240px;
-      overflow-y: scroll;
-      background-color: #efefef; }
-      .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel::-webkit-scrollbar {
-        width: 15px; }
-      .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel::-webkit-scrollbar-thumb {
-        background: #09c3ed; }
-      .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel::-webkit-scrollbar-track-piece {
-        background: #dbd8d8; }
-      .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel .review {
-        padding: 7px 15px;
-        border-bottom: 1px solid #b5b5bb; }
-        .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel .review .rev-star {
-          color: #09c3ed;
-          font-size: 30px;
-          font-weight: normal; }
-        .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel .review .rev-content {
-          font-size: 15px;
-          font-weight: lighter; }
-        .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel .review .rv-author {
-          font-size: 15px;
-          font-weight: lighter; }
-    .main .rating-and-reviews .tab-content #write-review .title {
-      font-size: 17px; }
-    .main .rating-and-reviews .tab-content #write-review .rate {
-      margin: 20px 0;
-      font-size: 25px; }
-      .main .rating-and-reviews .tab-content #write-review .rate .star {
-        color: #09c3ed;
-        display: inline-block; }
-      .main .rating-and-reviews .tab-content #write-review .rate img {
-        display: inline-block; }
-      .main .rating-and-reviews .tab-content #write-review .rate .text {
-        display: inline-block; }
-    .main .rating-and-reviews .tab-content .review-form label {
-      display: block;
-      font-size: 20px; }
-    .main .rating-and-reviews .tab-content .review-form .review-description {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 5px;
-      border: 1px solid #b5b5bb; }
-    .main .rating-and-reviews .tab-content .review-form .review-author {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #b5b5bb; }
-    .main .rating-and-reviews .tab-content .review-form .review-submit {
-      float: none;
-      text-align: right; }
-      .main .rating-and-reviews .tab-content .review-form .review-submit .submit-button {
-        width: 150px;
-        height: 40px;
-        background-color: #09c3ed;
-        color: #fbfbfb;
-        border: 1px solid #b5b5bb; }
-        .main .rating-and-reviews .tab-content .review-form .review-submit .submit-button img {
-          width: 21px;
-          height: 23px; }
-        .main .rating-and-reviews .tab-content .review-form .review-submit .submit-button:hover {
-          background-color: #0daed2; }
-  .main .comments {
-    margin: 30px 0; }
+    position: relative;
+    margin-top: 25px; }
+    .main .col-right .title-col {
+      font-size: 30px;
+      margin-left: 15px;
+      padding-top: 5px; }
+    .main .col-right .brand-item {
+      margin: 10px; }
+      .main .col-right .brand-item > a {
+        display: block;
+        padding: 10px; }
+        .main .col-right .brand-item > a:hover {
+          outline: 1px solid #09c3ed;
+          outline-offset: -1px; }
 
-/*# sourceMappingURL=appProduct.css.map */
+/*# sourceMappingURL=allBrands.css.map */
