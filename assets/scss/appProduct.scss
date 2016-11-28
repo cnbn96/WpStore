@@ -5,17 +5,7 @@
 @import "features-footer";
 
 
-/*---------FOR ANIMATION------------*/
-@keyframes MENU {
-    from {
-        overflow: hidden;
-        top: 73px;
-    }
-    to {
-        overflow: visible;
-        top: 10px;
-    }
-}
+
 /*---------STYLE FOR ZOOM ELEVATE----------*/
 .zoomLens {
     width: 130px;

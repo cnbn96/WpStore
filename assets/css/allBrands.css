@@ -212,17 +212,20 @@ img {
       .fix-header-bar .cart-hotline-cash .hotline-cash .hotline {
         margin-right: 5px; } }
 
+/*---------FOR ANIMATION------------*/
+@keyframes MEGAMENU {
+  from {
+    overflow: hidden;
+    top: 73px; }
+  to {
+    overflow: visible;
+    top: 10px; } }
 .main-menu .vertical-category-menu {
   background-color: #0daed2;
   height: 55px;
   color: #fbfbfb;
   cursor: pointer;
-                /*
-z-index: 1001;*/
   position: relative; }
-  .main-menu .vertical-category-menu.animation-menu {
-    animation: MENU .5s;
-    animation-fill-mode: both; }
   .main-menu .vertical-category-menu > .title {
     margin-left: 30px;
     line-height: 55px; }
@@ -281,54 +284,80 @@ z-index: 1001;*/
         @media (max-width: 992px) {
           .main-menu .vertical-category-menu .category-menu-list-item .category-item .toggle-nav {
             display: block !important; } }
-      .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list {
+      .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list {
         display: none;
         background-color: #efefef;
         border: 1px solid #b5b5bb; }
-        .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .row {
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .row {
           padding: 0;
           margin: 0; }
-        .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .group-item {
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .group-item {
           padding: 0;
           margin: 25px 30px;
           text-align: center;
           background-color: #d9d9da; }
-          .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .group-item .view-by-brand {
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .group-item .view-by-brand {
             color: #09c3ed;
             font-size: 18px;
             line-height: 40px; }
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .group-item .view-by-brand > .title {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .group-item .view-by-brand > .title {
               padding: 5px 0;
               border-radius: 4px; }
-        .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group {
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group {
           text-align: left; }
-          .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .title {
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .title {
             margin-bottom: 30px;
             text-align: center; }
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .title a {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .title a {
               font-size: 18px;
               color: #09c3ed; }
-          .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .list-mega .item {
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .list-mega .item {
             text-align: center;
             color: #29292b;
             line-height: 35px;
             font-size: 15px;
             margin-bottom: 10px;
             border-bottom: none !important; }
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .list-mega .item i {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .list-mega .item i {
               font-size: 13px;
               margin-right: 5px; }
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .list-mega .item:hover {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .list-mega .item:hover {
               background-color: #09c3ed;
               color: #fbfbfb; }
           @media (max-width: 767px) {
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group {
               padding: 0 50px; } }
         @media (max-width: 1199px) {
-          .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list {
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list {
             background-color: #efefef; } }
-  .main-menu .vertical-category-menu:hover {
-    background-color: #09c3ed; }
+      @media (min-width: 993px) {
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list {
+          position: absolute;
+          top: -56px;
+          left: 100%;
+          min-width: 800px;
+          min-height: 397px;
+          display: block;
+          -webkit-transition: .3s ease-in-out;
+          -moz-transition: .3s ease-in-out;
+          -o-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+          -webkit-transform: translate(80px, 0);
+          -moz-transform: translate(80px, 0);
+          -o-transform: translate(80px, 0);
+          transform: translate(80px, 0);
+          opacity: 0;
+          visibility: hidden; }
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item:hover {
+          background-color: #09c3ed; }
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item:hover .category-mega-list {
+            display: block;
+            -webkit-transform: translate(0, 0);
+            -moz-transform: translate(0, 0);
+            -o-transform: translate(0, 0);
+            transform: translate(0, 0);
+            opacity: 1;
+            visibility: visible; } }
   @media (max-width: 1199px) {
     .main-menu .vertical-category-menu {
       padding: 0; } }

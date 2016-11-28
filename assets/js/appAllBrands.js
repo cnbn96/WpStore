@@ -76,27 +76,27 @@
       });
     }
   };
-
-  //Khi click vào control của carousel item sẽ thay image lớn của product
-  $("#crsl-owl-control a").on("click",function(){
-    setTimeout(function(){
-      image = $('.crsl-item.crsl-active').find('a[data-image]').attr('data-image');
-      $('#img1.image-zoom-elevate').attr('src', image);
-    }, 300);
-  });
-
-  // titile menu onclick sẽ slideToggle List Menu Item xuống
-  // và trước đó sẽ add event onclick với document khi khi outside
-  // ListMenu thì sẽ slideUp
-  $('.vertical-category-menu .title').click(function () {
-    $(document).on('click',function(e){
-      if(!$(e.target).closest('.vertical-category-menu').length){
-        $('.category-menu-list-item:visible').slideUp('slow');
-      }
+  if(windowWidth > 991){
+    //Khi click vào control của carousel item sẽ thay image lớn của product
+    $("#crsl-owl-control a").on("click",function(){
+      setTimeout(function(){
+        image = $('.crsl-item.crsl-active').find('a[data-image]').attr('data-image');
+        $('#img1.image-zoom-elevate').attr('src', image);
+      }, 300);
     });
-    $('.category-menu-list-item').slideToggle('slow');
-  });
 
+    // titile menu onclick sẽ slideToggle List Menu Item xuống
+    // và trước đó sẽ add event onclick với document khi khi outside
+    // ListMenu thì sẽ slideUp
+    $('.vertical-category-menu .title').click(function () {
+      $(document).on('click',function(e){
+        if(!$(e.target).closest('.vertical-category-menu').length){
+          $('.category-menu-list-item:visible').slideUp('slow');
+        }
+      });
+      $('.category-menu-list-item').slideToggle('slow');
+    });
+  }
 
   // $(document).on('click',function(e){
   //   var sidebar = $('.sidebar');
@@ -107,5 +107,12 @@
   //   }
   //   e.preventDefault();
   //   e.stopPropagation();
-  //});
+  // });
+  // $('.category-item .toggle-nav').click(function () {
+  //     var o = $(this);
+  //     var navList = o.next();
+  //     navList.slideToggle('slow', function () {
+  //         o.find('.show-nav').toggleClass('fa-chevron-down fa-times');
+  //     });
+  // });
 } (jQuery));

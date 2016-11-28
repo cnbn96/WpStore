@@ -1,18 +1,21 @@
 /*
 Error: Undefined variable: "$dark-blue".
-        on line 3 of assets/scss/menu.scss
+        on line 14 of assets/scss/menu.scss
 
-1: .main-menu{
-2:     .vertical-category-menu{
-3:         background-color: $dark-blue;
-4:         height: 55px;
-5:         color: $white;
-6:         cursor: pointer;/*
-7:         z-index: 1001;*\/
-8:         position: relative;
+9:         top: 10px;
+10:     }
+11: }
+12: .main-menu{
+13:     .vertical-category-menu{
+14:         background-color: $dark-blue;
+15:         height: 55px;
+16:         color: $white;
+17:         cursor: pointer;
+18:         position: relative;
+19:         > .title{
 
 Backtrace:
-assets/scss/menu.scss:3
+assets/scss/menu.scss:14
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -73,4 +76,4 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 3 of assets/scss/menu.scss\A \A 1: .main-menu{\A 2:     .vertical-category-menu{\A 3:         background-color: $dark-blue;\A 4:         height: 55px;\A 5:         color: $white;\A 6:         cursor: pointer;/*\A 7:         z-index: 1001;*/\A 8:         position: relative;"; }
+  content: "Error: Undefined variable: \"$dark-blue\".\A         on line 14 of assets/scss/menu.scss\A \A 9:         top: 10px;\A 10:     }\A 11: }\A 12: .main-menu{\A 13:     .vertical-category-menu{\A 14:         background-color: $dark-blue;\A 15:         height: 55px;\A 16:         color: $white;\A 17:         cursor: pointer;\A 18:         position: relative;\A 19:         > .title{"; }

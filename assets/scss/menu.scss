@@ -1,15 +1,21 @@
+/*---------FOR ANIMATION------------*/
+@keyframes MEGAMENU {
+    from {
+        overflow: hidden;
+        top: 73px;
+    }
+    to {
+        overflow: visible;
+        top: 10px;
+    }
+}
 .main-menu{
     .vertical-category-menu{
         background-color: $dark-blue;
         height: 55px;
         color: $white;
-        cursor: pointer;/*
-        z-index: 1001;*/
+        cursor: pointer;
         position: relative;
-        &.animation-menu  {
-            animation: MENU .5s;
-            animation-fill-mode: both
-        }
         > .title{
             margin-left: 30px;
             line-height: 55px;
@@ -26,13 +32,14 @@
         }
         .category-menu-list-item{
             display: none;
+
             position: absolute;
             width: 100%;
             z-index: 999;
             top: 100%;
             left: 0;
             .category-item{
-                position: relative;
+              position: relative;
                 .menu-title-zone{
                     height: 55px;
                     margin-top: 2px;
@@ -61,7 +68,7 @@
                         color: $white;
                     }
                 }
-				.toggle-nav{
+          			.toggle-nav{
                     display: none;
                     right: 10px;
                     top: 10px;
@@ -80,7 +87,7 @@
                         display: block !important;
                     }
                 }
-                > .category-mega-list{
+                .category-mega-list{
                     display: none;
                     // min-height: 388px;
                     // min-width: 870px;
@@ -145,14 +152,43 @@
                         background-color: $grey-white2;
                     }
                 }
+                @media #{$gt-md}{
+                  .category-mega-list{
+                    position: absolute;
+                    top: -56px;
+                    left: 100%;
+                    min-width: 800px;
+                    min-height: 397px;
+                    display: block;
+                    -webkit-transition: .3s ease-in-out;
+                    -moz-transition: .3s ease-in-out;
+                    -o-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
+                    -webkit-transform: translate(80px,0);
+                    -moz-transform: translate(80px,0);
+                    -o-transform: translate(80px,0);
+                    transform: translate(80px, 0);
+                    opacity: 0;
+                    visibility: hidden;
+                  }
+                  &:hover{
+                      background-color: $light-blue;
+                      .category-mega-list{
+                        display: block;
+                        -webkit-transform: translate(0,0);
+                        -moz-transform: translate(0,0);
+                        -o-transform: translate(0,0);
+                        transform: translate(0, 0);
+                        opacity: 1;
+                        visibility: visible;
+                      }
+                  }
+                }
             }
-        }
-        &:hover{
-            background-color: $light-blue;
-        }
-        @media #{$low-tablet}{
-            padding: 0;
-        }
+      }
+      @media #{$low-tablet}{
+          padding: 0;
+      }
     }
     .fix-menu{
         position: fixed;
