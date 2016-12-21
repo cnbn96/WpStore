@@ -1,0 +1,1375 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Well Played
+    link(rel='icon', type='image/png', href='./images/favicon.png')
+    link(rel='stylesheet', href='./fonts/fonts-awesome/font-awesome.min.css')
+    link(href='./fonts/oswald-fonts.css', rel='stylesheet')
+    link(href='./lib/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='./css/app.css')
+    link(rel='stylesheet', href='./css/appProduct.css')
+  body
+    .page-loader.loader
+    // --BEGIN HEADER --
+    include header.jade
+    //header.fix-header-bar
+      .container
+        .row
+          .logo.col-xs-12.col-lg-3
+            a.header-logo(ui-sref='product')
+              img(src='./images/logo-icon.png', alt='SAMPLELOGO')
+          .search-bar.form-group.col-xs-12.col-lg-5
+            .search-box
+              input.search-input(type='text', placeholder='Search')
+              .autocomplete-products
+                ul.autocomplete-list
+                  li.item
+                    .product
+                      .image
+                        img(src='./images/mouse1.png', alt='RIVAL 700')
+                      .details
+                        ul
+                          li
+                            span.brand Steelseries
+                          li
+                            span.name Rival 700
+                          li
+                            span.price
+                              | 2,390,000
+                              span.currency-symbol ₫
+                  li.item
+                    .product
+                      .image
+                        img(src='./images/razer-pad.png', alt='RIVAL 700')
+                      .details
+                        ul
+                          li
+                            span.brand Steelseries
+                          li
+                            span.name Rival 700
+                          li
+                            span.price 2,390,000
+                            span.currency-symbol ₫
+                  li.item
+                    .product
+                      .image
+                        img(src='./images/fiio.jpg', alt='RIVAL 700')
+                      .details
+                        ul
+                          li
+                            span.brand Steelseries
+                          li
+                            span.name Rival 700
+                          li
+                            span.price
+                              | 2,390,000
+                              span.currency-symbol ₫
+            button
+              span.search-icon
+                img(src='./images/search-icon.png')
+          .cart-hotline-cash.col-xs-12.col-lg-4
+            .cart.left
+              a(href='#')
+                img(src='./images/cart-icon.png', alt='CART')
+              span.number-cart 1
+            .hotline-cash.right
+              .hotline
+                i.fa.fa-comments-o
+                .text
+                  span.title
+                    | Hotline
+                    br
+                  span.number
+                    | 01203214160
+              .cash
+                i.fa.fa-truck
+                .text
+                  span.title
+                    | Cash on
+                    br
+                    | Delivery
+    
+    // --END HEADER --
+    // --BEGIN MAIN-CONTENT --
+    .main-content
+      // --BEGIN NAVBAR --
+      .navbar
+        .navbar-width.container
+          .main-menu
+            h1.navbar-title
+              span.text
+                i.fa.fa-bars
+                |  NAVIGATION
+            a.arrow.toggle-nav(href='javascript:;')
+              span.fa.fa-chevron-down.show-nav.toggle-nav-title
+            ul.navbar-list-items
+              li.navbar-item.submenu-1.col-xs-12.col-lg-2
+                h3.title-zone
+                  .icon
+                    img(src='./images/svg-icon/headphone-black.svg', alt='Audio')
+                  span.text Audio
+                a.arrow.toggle-nav(href='javascript:;')
+                  span.fa.fa-chevron-down.show-nav
+                .dropdown-submenu
+                  .row
+                    .group-item.col-sm-12
+                      a.view-by-brand(href='#')
+                        span.title VIEW ALL BRANDS
+                  .row
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') HEADPHONES
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Fullsize headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Earbud headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text In-ear headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable headphones
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') DAC / HEADAMP
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable DAC/AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Desktop AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Desktop DAC
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Transport Converter
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') MUSIC PLAYER
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text DSD Music Player
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text 24bit Music Player
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text LossLess Music Player
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') AUDIO ACCESSORIES
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Analog cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Digital cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Eartip / Earpad
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone stand
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone box
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Leather case
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Audio filter
+              li.navbar-item.submenu-2.col-xs-12.col-lg-2
+                h3.title-zone
+                  .icon
+                    img(src='./images/svg-icon/speaker-black.svg', alt='Speaker')
+                  span.text Speaker
+                a.arrow.toggle-nav(href='javascript:;')
+                  span.fa.show-nav.fa-chevron-down
+                .dropdown-submenu
+                  .row
+                    .group-item.col-sm-12
+                      a.view-by-brand(href='#')
+                        span.title VIEW ALL BRANDS
+                  .row
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') HEADPHONES
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Fullsize headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Earbud headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text In-ear headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable headphones
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') DAC / HEADAMP
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable DAC/AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Desktop AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Desktop DAC
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Transport Converter
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') MUSIC PLAYER
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text DSD Music Player
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text 24bit Music Player
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text LossLess Music Player
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') AUDIO ACCESSORIES
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Analog cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Digital cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Eartip / Earpad
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone stand
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone box
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Leather case
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Audio filter
+              li.navbar-item.submenu-3.col-xs-12.col-lg-2
+                h3.title-zone
+                  .icon
+                    img(src='./images/svg-icon/gamepad-black.svg', alt='Gaming Gear')
+                  span.text Gaming Gear
+                a.arrow.toggle-nav(href='javascript:;')
+                  span.fa.show-nav.fa-chevron-down
+                .dropdown-submenu
+                  .row
+                    .group-item.col-sm-12
+                      a.view-by-brand(href='#')
+                        span.title VIEW ALL BRANDS
+                  .row
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') HEADPHONES
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Fullsize headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Earbud headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text In-ear headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable headphones
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') DAC / HEADAMP
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable DAC/AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Desktop AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Desktop DAC
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Transport Converter
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') MUSIC PLAYER
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text DSD Music Player
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text 24bit Music Player
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text LossLess Music Player
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') AUDIO ACCESSORIES
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Analog cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Digital cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Eartip / Earpad
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone stand
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone box
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Leather case
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Audio filter
+              li.navbar-item.submenu-4.col-xs-12.col-lg-2
+                h3.title-zone
+                  .icon
+                    img(src='./images/svg-icon/desktop-black.svg', alt='Computer')
+                  span.text Computer
+                a.arrow.toggle-nav(href='javascript:;')
+                  span.fa.show-nav.fa-chevron-down
+                .dropdown-submenu
+                  .row
+                    .group-item.col-sm-12
+                      a.view-by-brand(href='#')
+                        span.title VIEW ALL BRANDS
+                  .row
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') HEADPHONES
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Fullsize headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Earbud headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text In-ear headphones
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable headphones
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') DAC / HEADAMP
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Portable DAC/AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Desktop AMP
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Desktop DAC
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Transport Converter
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') MUSIC PLAYER
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text DSD Music Player
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text 24bit Music Player
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text LossLess Music Player
+                    .mega-group.col-xs-12.col-sm-3
+                      h4.title
+                        a(href='#') AUDIO ACCESSORIES
+                      ul.list-mega
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Analog cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Digital cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Eartip / Earpad
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone stand
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone box
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Leather case
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Headphone cable
+                        li.item
+                          i.fa.fa-chevron-right
+                          span.text Audio filter
+              li.navbar-item.submenu-5.col-xs-12.col-lg-2
+                h3.title-zone
+                  .icon
+                    img(src='./images/svg-icon/gift-box-black.svg', alt='Promotion')
+                  span.text Promotion
+              li.navbar-item.submenu-6.col-xs-12.col-lg-2
+                h3.title-zone
+                  .icon
+                    img(src='./images/svg-icon/person-black.svg', alt='Contacts')
+                  span.text Contacts
+      // --END NAVBAR --
+      // --BEGIN SLIDER --
+      .flex-slider.container-fluid
+        // Left and right controls
+        nav.main-slider-controls
+          #main-carousel.clearfix.container
+            a.previous(href='#')
+              i.fa.fa-chevron-left
+            a.next(href='#')
+              i.fa.fa-chevron-right
+        .main-slider.slide.crsl-items(data-navigation='main-carousel')
+          // Wrapper for slides
+          .crsl-wrap(role='listbox')
+            .crsl-item
+              .slider-background(style="background: url('./images/razer-slider.jpg');")
+              .container
+                .slider-content
+                  h4.title Lorem Ipsum
+                  .content
+                    p.slider-text
+                      | Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
+                      | risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel dui. Aenean vitae sodales nulla.
+                      | Aenean condimentum, tellus eget efficitur efficitur,
+                  .readmore-button
+                    a(href='#') READ MORE
+            .crsl-item
+              .slider-background(style="background: url('./images/razer-slider.jpg');")
+              .container
+                .slider-content
+                  h4.title Lorem Ipsum
+                  .content
+                    p.slider-text
+                      | Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
+                      | risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel dui. Aenean vitae sodales nulla.
+                      | Aenean condimentum, tellus eget efficitur efficitur,
+                  .readmore-button
+                    a(href='#') READ MORE
+            .crsl-item
+              .slider-background(style="background: url('./images/razer-slider.jpg');")
+              .container
+                .slider-content
+                  h4.title Lorem Ipsum
+                  .content
+                    p.slider-text
+                      | Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
+                      | risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel dui. Aenean vitae sodales nulla.
+                      | Aenean condimentum, tellus eget efficitur efficitur,
+                  .readmore-button
+                    a(href='#') READ MORE
+      // --END SLIDER --
+      // --BEGIN ZONE PRODUCT 1 --
+      .zone-products
+        .container
+          // --BEGIN CARD PRODUCT 1 --
+          .product-card
+            .tabs.col-sm-12
+              // BEGIN TABS
+              ul.nav.nav-tabs
+                li.active
+                  a.tab-item.active(href='#comming', data-toggle='tab')
+                    i.fa.fa-hourglass-half
+                    span.text
+                      | Comming soon
+                li
+                  a.tab-item(href='#most-views', data-toggle='tab')
+                    i.fa.fa-eye
+                    span.text
+                      | Most Views
+            // END TABS
+            // BEGIN CAROUSEL ITEMS
+            .tab-content
+              #comming.hotnews-slider.tab-slider.tab-pane.fade.in.active(data-navigation='navbtns')
+                .crsl-items
+                  .crsl-wrap.slider-wrap
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='zzzz')
+                          img.card-item-img(src='./images/keyboard.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 LEOPOLD
+                          .name
+                            span
+                              | FC900R Blue Grey Edition
+                          .price
+                            span.price-number
+                              | 3,190,000 ₫
+                        span.info.text-center Coming
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='zzzz')
+                          img.card-item-img(src='./images/keyboard.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 LEOPOLD
+                          .name
+                            span
+                              | FC900R Blue Grey Edition
+                          .price
+                            span.price-number
+                              | 3,190,000 ₫
+                        span.info.text-center Coming
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='zzzz')
+                          img.card-item-img(src='./images/keyboard.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 LEOPOLD
+                          .name
+                            span
+                              | FC900R Blue Grey Edition
+                          .price
+                            span.price-number
+                              | 3,190,000 ₫
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='zzzz')
+                          img.card-item-img(src='./images/keyboard.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 LEOPOLD
+                          .name
+                            span
+                              | FC900R Blue Grey Edition
+                          .price
+                            span.price-number
+                              | 3,190,000 ₫
+                        span.info.text-center Coming
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='zzzz')
+                          img.card-item-img(src='./images/keyboard.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 LEOPOLD
+                          .name
+                            span
+                              | FC900R Blue Grey Edition
+                          .price
+                            span.price-number
+                              | 3,190,000 ₫
+              #most-views.most-views-slider.tab-slider.tab-pane.fade(data-navigation='navbtns')
+                .tab-loader.loader(style='position: absolute;')
+                .crsl-items
+                  .crsl-wrap.slider-wrap
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='FIIO X1')
+                          img.card-item-img(src='/images/fiio.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 FIIO
+                          .name
+                            span X1
+                          .price
+                            span.price-number 2,500,000 ₫
+                        span.info.text-center Coming
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='zzzz')
+                          img.card-item-img(src='./images/keyboard.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 LEOPOLD
+                          .name
+                            span
+                              | FC900R Blue Grey Edition
+                          .price
+                            span.price-number
+                              | 3,190,000 ₫
+                        span.info.text-center Coming
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='zzzz')
+                          img.card-item-img(src='./images/keyboard.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 LEOPOLD
+                          .name
+                            span
+                              | FC900R Blue Grey Edition
+                          .price
+                            span.price-number
+                              | 3,190,000 ₫
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='zzzz')
+                          img.card-item-img(src='./images/keyboard.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 LEOPOLD
+                          .name
+                            span
+                              | FC900R Blue Grey Edition
+                          .price
+                            span.price-number
+                              | 3,190,000 ₫
+                        span.info.text-center Coming
+                    .crsl-item.card-slider
+                      figure.text-center
+                        a.center-block(href='#', title='zzzz')
+                          img.card-item-img(src='./images/keyboard.jpg', alt='KEYBOARD')
+                        figcaption
+                          h3 LEOPOLD
+                          .name
+                            span
+                              | FC900R Blue Grey Edition
+                          .price
+                            span.price-number
+                              | 3,190,000 ₫
+              .slidernav.slider-controls.text-center
+                #navbtns.clearfix
+                  a.previous.btn-prev.left(href='#hotnews')
+                    i.fa.fa-chevron-left
+                  a.next.btn-next.right(href='#hotnews')
+                    i.fa.fa-chevron-right
+            // END CAROUSEL ITEMS
+          // --END CARD PRODUCT 1 --
+          // --BEGIN CARD PRODUCT 2 --
+          .product-card
+            .row
+              .col-xs-12.col-md-3.col-lg-3
+                .col-left
+                  h3.title-zone
+                    a(href='#')
+                      span.icon
+                        img(src='./images/svg-icon/headphone-white.svg', alt='AUDIO')
+                      span.text Audio
+                  a.toggle-nav(href='javascript:;')
+                    span.fa.fa-chevron-down.show-nav
+                  ul.nav-list-items
+                    li.item
+                      a(href='#') Headphones
+                    li.item
+                      a(href='#') DAC / Headamp
+                    li.item
+                      a(href='#') Music Players
+                    li.item
+                      a(href='#') All
+              .col-xs-12.col-md-9.col-lg-9
+                .col-right
+                  .brands
+                    .all-brands.col-xs-12.col-lg-2
+                      h4.title
+                        a(href='#') All Brands
+                    // CAROUSEL BRANDS
+                    .col-xs-12.col-lg-8
+                      .audio-brands-slider.brands-slider.crsl-items(data-navigation='audio-crsl-brands')
+                        .crsl-wrap
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='./images/svg-icon/brands/audio/yuin-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='./images/svg-icon/brands/audio/1more-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='./images/svg-icon/brands/audio/akg-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/audio/astell-and-kern-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/audio/audeze-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/audio/audio-technica-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/audio/audio-technica-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/audio/audio-technica-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/audio/audio-technica-logo.svg', alt='Yuin')
+                    .slider-controls
+                      #audio-crsl-brands.clearfix
+                        a.previous.btn-prev(href='#xxx')
+                          i.fa.fa-chevron-left
+                        a.next.btn-next(href='#xxx')
+                          i.fa.fa-chevron-right
+                  .products
+                    .slider-controls.text-center
+                      #audio-crsl-product.clearfix.crsl-controls
+                        a.previous.btn-prev(href='#zzz')
+                          i.fa.fa-chevron-left
+                        a.next.btn-next(href='#zzz')
+                          i.fa.fa-chevron-right
+                    .audio-product-slider.product-slider.crsl-items(data-navigation='audio-crsl-product')
+                      .crsl-wrap
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='FIIO X1')
+                              img.card-item-img(src='/images/fiio.jpg', alt='KEYBOARD')
+                            figcaption
+                              h3 FIIO
+                              .name
+                                span X1
+                              .price
+                                span.price-number 2,500,000 ₫
+                            span.info.text-center Coming
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='zzzz')
+                              img.card-item-img(src='/images/headphone.png', alt='KEYBOARD')
+                            figcaption
+                              h3 LEOPOLD
+                              .name
+                                span FC900R Blue Grey Edition
+                              .price
+                                span.price-number 3,190,000 ₫
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='FIIO X1')
+                              img.card-item-img(src='/images/fiio.jpg', alt='KEYBOARD')
+                            figcaption
+                              h3 FIIO
+                              .name
+                                span X1
+                              .price
+                                span.price-number 2,500,000 ₫
+                            span.info.text-center Coming
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='FIIO X1')
+                              img.card-item-img(src='/images/keyboard.jpg', alt='KEYBOARD')
+                            figcaption
+                              h3 FIIO
+                              .name
+                                span X1
+                              .price
+                                span.price-number 2,500,000 ₫
+                            span.info.text-center Coming
+          // --END CARD PRODUCT 2 --
+          // --BEGIN CARD PRODUCT 3 --
+          .product-card
+            .row
+              .col-xs-12.col-md-3.col-lg-3
+                .col-left
+                  h3.title-zone
+                    a(href='#')
+                      span.icon
+                        img(src='/images/svg-icon/gamepad-white.svg', alt='AUDIO')
+                      span.text Gaming Gear
+                  a.toggle-nav(href='javascript:;')
+                    span.fa.fa-chevron-down.show-nav
+                  ul.nav-list-items
+                    li.item
+                      a(href='#') Gaming Headsets
+                    li.item
+                      a(href='#') Gaming Keyboards
+                    li.item
+                      a(href='#') Gaming Mice
+                    li.item
+                      a(href='#') Gaming Mousepads
+                    li.item
+                      a(href='#') Gaming Chair/Desks
+                    li.item
+                      a(href='#') All
+              .col-xs-12.col-md-9.col-lg-9
+                .col-right
+                  .brands
+                    .all-brands.col-xs-12.col-lg-2
+                      h4.title
+                        a(href='#') All Brands
+                    // CAROUSEL BRANDS
+                    .col-xs-12.col-lg-8
+                      .gear-brands-slider.brands-slider.crsl-items(data-navigation='gear-crsl-brands')
+                        .crsl-wrap
+                          .crsl-item
+                            .item
+                              a(ui-sref='product')
+                                img(src='/images/svg-icon/brands/gear/akracing-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/gear/corsair-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/gear/cougar-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/gear/das-keyboard-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/gear/cooler-master-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/gear/das-keyboard-logo.svg', alt='Yuin')
+                    .slider-controls
+                      #gear-crsl-brands.clearfix
+                        a.previous.btn-prev(href='#xxx')
+                          i.fa.fa-chevron-left
+                        a.next.btn-next(href='#xxx')
+                          i.fa.fa-chevron-right
+                  .products
+                    .slider-controls.text-center
+                      #gear-crsl-product.clearfix.crsl-controls
+                        a.previous.btn-prev(href='#zzz')
+                          i.fa.fa-chevron-left
+                        a.next.btn-next(href='#zzz')
+                          i.fa.fa-chevron-right
+                    .gear-product-slider.product-slider.crsl-items(data-navigation='gear-crsl-product')
+                      .crsl-wrap
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='zzzz')
+                              img.card-item-img(src='/images/mouse1.png', alt='KEYBOARD')
+                            figcaption
+                              h3 DAS KEYBOARD
+                              .name
+                                span Division Zero M50
+                              .price
+                                span.price-number 2,000,000 ₫
+                            span.info.text-center HOT
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='zzzz')
+                              img.card-item-img(src='/images/rival.png', alt='STEEL SERIES - Rival 700')
+                            figcaption
+                              h3 STEEL SERIES
+                              .name
+                                span Rival 700
+                              .price
+                                span.price-number 2,390,000 ₫
+                            span.info.text-center HOT
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='RAZER - Firefly')
+                              img.card-item-img(src='/images/razer-pad.png', alt='KEYBOARD')
+                            figcaption
+                              h3 RAZER
+                              .name
+                                span Firefly
+                              .price
+                                span.price-number 1,590,000 ₫
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='zzzz')
+                              img.card-item-img(src='/images/keyboard.jpg', alt='KEYBOARD')
+                            figcaption
+                              h3 LEOPOLD
+                              .name
+                                span FC900R Blue Grey Edition
+                              .price
+                                span.price-number 3,190,000 ₫
+          // --END CARD PRODUCT 3 --
+          // --BEGIN CARD PRODUCT 4 --
+          .product-card
+            .row
+              .col-xs-12.col-md-3.col-lg-3
+                .col-left
+                  h3.title-zone
+                    a(href='#')
+                      span.icon
+                        img(src='/images/svg-icon/speaker-white.svg', alt='AUDIO')
+                      span.text Speaker
+                  a.toggle-nav(href='javascript:;')
+                    span.fa.fa-chevron-down.show-nav
+                  ul.nav-list-items
+                    li.item
+                      a(href='#') Portable Speakers
+                    li.item
+                      a(href='#') Computer Speakers
+                    li.item
+                      a(href='#') Soundbar Speakers
+                    li.item
+                      a(href='#') All
+              .col-xs-12.col-md-9.col-lg-9
+                .col-right
+                  .brands
+                    .all-brands.col-xs-12.col-lg-2
+                      h4.title
+                        a(href='#') All Brands
+                    // CAROUSEL BRANDS
+                    .col-xs-12.col-lg-8
+                      .speaker-brands-slider.brands-slider.crsl-items(data-navigation='speaker-crsl-brands')
+                        .crsl-wrap
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/speaker/razer-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/speaker/dream-wave-logo.jpg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/speaker/harman-kardon-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/speaker/riva-audio-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/speaker/acoustic-energy-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/speaker/acoustic-energy-logo.svg', alt='Yuin')
+                    .slider-controls
+                      #speaker-crsl-brands.clearfix
+                        a.previous.btn-prev(href='#xxx')
+                          i.fa.fa-chevron-left
+                        a.next.btn-next(href='#xxx')
+                          i.fa.fa-chevron-right
+                  .products
+                    .slider-controls.text-center
+                      #speaker-crsl-product.clearfix.crsl-controls
+                        a.previous.btn-prev(href='#zzz')
+                          i.fa.fa-chevron-left
+                        a.next.btn-next(href='#zzz')
+                          i.fa.fa-chevron-right
+                    .speaker-product-slider.product-slider.crsl-items(data-navigation='speaker-crsl-product')
+                      .crsl-wrap
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='SONY - SRS-HG1')
+                              img.card-item-img(src='/images/sony-srs.png', alt='KEYBOARD')
+                            figcaption
+                              h3 SONY
+                              .name
+                                span SRS-HG1
+                              .price
+                                span.price-number 4,290,000 ₫
+                            span.info.text-center HOT
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='zzzz')
+                              img.card-item-img(src='/images/dreamwave-harmony.png', alt='KEYBOARD')
+                            figcaption
+                              h3 DREAM WAVE
+                              .name
+                                span Harmony
+                              .price
+                                span.price-number 3,500,000 ₫
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='zzzz')
+                              img.card-item-img(src='/images/dreamwave-survivor.png', alt='KEYBOARD')
+                            figcaption
+                              h3 DREAM WAVE
+                              .name
+                                span Survivor
+                              .price
+                                span.price-number 6,900,000 ₫
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='zzzz')
+                              img.card-item-img(src='/images/keyboard.jpg', alt='KEYBOARD')
+                            figcaption
+                              h3 LEOPOLD
+                              .name
+                                span FC900R Blue Grey Edition
+                              .price
+                                span.price-number 3,190,000 ₫
+          // --END CARD PRODUCT 4 --
+          // --BEGIN CARD PRODUCT 5 --
+          .product-card
+            .row
+              .col-xs-12.col-md-3.col-lg-3
+                .col-left
+                  h3.title-zone
+                    a(href='#')
+                      span.icon
+                        img(src='/images/svg-icon/desktop-white.svg', alt='AUDIO')
+                      span.text Computer
+                  a.toggle-nav(href='javascript:;')
+                    span.fa.fa-chevron-down.show-nav
+                  ul.nav-list-items
+                    li.item
+                      a(href='#') Gaming Laptops
+                    li.item
+                      a(href='#') Gaming Desktops
+                    li.item
+                      a(href='#') Monitors
+                    li.item
+                      a(href='#') All
+              .col-xs-12.col-md-9.col-lg-9
+                .col-right
+                  .brands
+                    .all-brands.col-xs-12.col-lg-2
+                      h4.title
+                        a(href='#') All Brands
+                    // CAROUSEL BRANDS
+                    .col-xs-12.col-lg-8
+                      .computer-brands-slider.brands-slider.crsl-items(data-navigation='computer-crsl-brands')
+                        .crsl-wrap
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/computer/asrock-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/computer/asus-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/computer/avexir-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/computer/custom-gaming-pc.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/computer/benq-logo.svg', alt='Yuin')
+                          .crsl-item
+                            .item
+                              a(href='#')
+                                img(src='/images/svg-icon/brands/computer/asus-logo.svg', alt='Yuin')
+                    .slider-controls
+                      #computer-crsl-brands.clearfix
+                        a.previous.btn-prev(href='#xxx')
+                          i.fa.fa-chevron-left
+                        a.next.btn-next(href='#xxx')
+                          i.fa.fa-chevron-right
+                  .products
+                    .slider-controls.text-center
+                      #computer-crsl-product.clearfix.crsl-controls
+                        a.previous.btn-prev(href='#zzz')
+                          i.fa.fa-chevron-left
+                        a.next.btn-next(href='#zzz')
+                          i.fa.fa-chevron-right
+                    .computer-product-slider.product-slider.crsl-items(data-navigation='computer-crsl-product')
+                      .crsl-wrap
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='MSI - GT80S 6QF TITAN SLI - ANNIVERS')
+                              img.card-item-img(src='/images/msi.png', alt='KEYBOARD')
+                            figcaption
+                              h3 MSI
+                              .name
+                                span GT80S 6QF TITAN SLI - ANNIVERS...
+                              .price
+                                span.price-number 112,500,000 ₫
+                            span.info.text-center Coming
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='LG -34UC98')
+                              img.card-item-img(src='/images/lg-34uc98.png', alt='KEYBOARD')
+                            figcaption
+                              h3 LG
+                              .name
+                                span 34UC98
+                              .price
+                                span.price-number 22,000,000 ₫
+                            span.info.text-center Coming
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='NZXT - H440')
+                              img.card-item-img(src='/images/razer-pc.png', alt='KEYBOARD')
+                            figcaption
+                              h3 NZXT
+                              .name
+                                span H440
+                              .price
+                                span.price-number 3,880,000 ₫
+                            span.info.text-center Coming
+                        .crsl-item.card-slider
+                          figure.text-center
+                            a.center-block(href='#', title='zzzz')
+                              img.card-item-img(src='/images/keyboard.jpg', alt='KEYBOARD')
+                            figcaption
+                              h3 LEOPOLD
+                              .name
+                                span FC900R Blue Grey Edition
+                              .price
+                                span.price-number 3,190,000 ₫
+                            span.info.text-center Coming
+          // --END CARD PRODUCT 5 --
+      // --END ZONE PRODUCTs--
+      // -- BEGIN POSTs and BRANDs --
+      .news-brands
+        .container
+          .row
+            .news-col.col-xs-12.col-lg-6
+              .title-bar
+                h3.title-col
+                  | NEWS
+                .slider-controls.right.text-center
+                  #news-crsl.clearfix
+                    a.previous.btn-prev(href='#xxx')
+                      i.fa.fa-chevron-left
+                    a.next.btn-next(href='#xxx')
+                      i.fa.fa-chevron-right
+              .news
+                .posts.news-slider.crsl-items(data-navigation='news-crsl')
+                  // BEGIN CAROUSEL
+                  .crsl-wrap
+                    // BEGIN CAROUSEL ITEM
+                    .post.crsl-item
+                      ul.list-post-items
+                        li.post-item
+                          .row
+                            .col-lg-4.image
+                              img(src='/images/post.jpg', alt='POST')
+                            .col-lg-8.text
+                              h4.title
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                              p.content
+                                | Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                | erat sed ornare.
+                        li.post-item
+                          .row
+                            .col-lg-4.image
+                              img(src='/images/post.jpg', alt='POST')
+                            .col-lg-8.text
+                              h4.title
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                              p.content
+                                | Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                | erat sed ornare.
+                        li.post-item
+                          .row
+                            .col-lg-4.image
+                              img(src='/images/post.jpg', alt='POST')
+                            .col-lg-8.text
+                              h4.title
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                              p.content
+                                | Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                | erat sed ornare.
+                    // END CAROUSEL ITEM
+                    // BEGIN CAROUSEL ITEM
+                    .post.crsl-item
+                      ul.list-post-items
+                        li.post-item
+                          .row
+                            .col-lg-4.image
+                              img(src='/images/post.jpg', alt='POST')
+                            .col-lg-8.text
+                              h4.title
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                              p.content
+                                | Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                | erat sed ornare.
+                        li.post-item
+                          .row
+                            .col-lg-4.image
+                              img(src='/images/post.jpg', alt='POST')
+                            .col-lg-8.text
+                              h4.title
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                              p.content
+                                | Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                | erat sed ornare.
+                        li.post-item
+                          .row
+                            .col-lg-4.image
+                              img(src='/images/post.jpg', alt='POST')
+                            .col-lg-8.text
+                              h4.title
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                              p.content
+                                | Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                | erat sed ornare.
+                    // END CAROUSEL ITEM
+                // END CAROUSEL
+            .brands-col.col-xs-12.col-lg-6
+              .title-bar
+                h3.title-col
+                  | BRANDS
+                .slider-controls.right.text-center
+                  #crsl-brands.clearfix
+                    a.previous.btn-prev(href='#xxx')
+                      i.fa.fa-chevron-left
+                    a.next.btn-next(href='#xxx')
+                      i.fa.fa-chevron-right
+              .brands
+                .brands-sliderz.crsl-items(data-navigation='crsl-brands')
+                  .crsl-wrap
+                    .brand.crsl-item
+                      ul.list-brand-items
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/akg-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/1more-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/audeze-logo.svg', alt='AKG LOGO')
+                    .brand.crsl-item
+                      ul.list-brand-items
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/akg-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/1more-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/audeze-logo.svg', alt='AKG LOGO')
+                    .brand.crsl-item
+                      ul.list-brand-items
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/akg-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/1more-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/audeze-logo.svg', alt='AKG LOGO')
+                    .brand.crsl-item
+                      ul.list-brand-items
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/akg-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/1more-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/audeze-logo.svg', alt='AKG LOGO')
+                    .brand.crsl-item
+                      ul.list-brand-items
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/akg-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/1more-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/audeze-logo.svg', alt='AKG LOGO')
+                    .brand.crsl-item
+                      ul.list-brand-items
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/akg-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/1more-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/audeze-logo.svg', alt='AKG LOGO')
+                    .brand.crsl-item
+                      ul.list-brand-items
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/akg-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/1more-logo.svg', alt='AKG LOGO')
+                        li.brand-item
+                          a(href='#')
+                            img(src='/images/svg-icon/brands/audio/audeze-logo.svg', alt='AKG LOGO')
+      // -- END POSTs and BRANDs --
+    // -- BEGIN FEATURES --
+    include features.jade
+    //.features
+      .container
+        .row
+          .col-xs-12.col-md-6.col-lg-3
+            .feature
+              a(href='#')
+                em.fa.fa-truck.text-center
+                h4 Shipping Fee
+          .col-xs-12.col-md-6.col-lg-3
+            .feature
+              a(href='#')
+                em.fa.fa-credit-card-alt.text-center
+                h4 Payment Methods
+          .col-xs-12.col-md-6.col-lg-3
+            .feature
+              a(href='#')
+                em.fa.fa-wrench.text-center
+                h4 Warranty Policy
+          .col-xs-12.col-md-6.col-lg-3
+            .feature.last-child
+              a(href='#')
+                em.fa.fa-cogs.text-center
+                h4 Repair Services
+    // -- END FEATURES ----
+    // -- BEGIN FOOTER --
+    include footer.jade       
+    // -- END FOOTER ----
+    #fb-root
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=1641551249491668";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'))
+    script(src='./js/jquery-3.1.0.min.js')
+    script(src='./lib/bootstrap/dist/js/bootstrap.min.js')
+    // APP ELSE
+    script(src='./js/responsiveCarousel.min.js')
+    script(src='./js/home.js')

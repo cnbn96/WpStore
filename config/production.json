@@ -1,0 +1,14 @@
+{
+  "dbUrl":"mongodb://utnhi123:utnhi123@ds141108.mlab.com:41108/wpstore" ,
+  "sessionSecret":"JFSJDKLFJzzskchwr123422388",
+  "fb":{
+    "appID": "853278644814413",
+    "appSecret": "d1cdd21342418c5f5b063aa1126b4ef4",
+    "callbackURL": "http://localhost:3002/auth/facebook/callback"
+  },
+  "S3AccessKey":"AKIAJHCO3PXVCOWQD7CQ",
+  "S3Secret":"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",
+  "S3Bucket":"wpstorestorage",
+  "S3URL": "http://d3oixujbgkf2dz.cloudfront.net/",
+  "host": "http://localhost:3002"
+}

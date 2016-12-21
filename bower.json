@@ -1,0 +1,22 @@
+{
+  "name": "wpstore",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "cnbn96"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/cnbn96/WpStore",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

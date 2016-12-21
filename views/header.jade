@@ -1,0 +1,76 @@
+header.fix-header-bar
+  .container
+    .row
+      .logo.col-xs-12.col-lg-3
+        a.header-logo(ui-sref='product')
+          img(src='./images/logo-icon.png', alt='SAMPLELOGO')
+      .search-bar.form-group.col-xs-12.col-lg-5
+        .search-box
+          input.search-input(type='text', placeholder='Search')
+          .autocomplete-products
+            ul.autocomplete-list
+              li.item
+                .product
+                  .image
+                    img(src='./images/mouse1.png', alt='RIVAL 700')
+                  .details
+                    ul
+                      li
+                        span.brand Steelseries
+                      li
+                        span.name Rival 700
+                      li
+                        span.price
+                          | 2,390,000
+                          span.currency-symbol ₫
+              li.item
+                .product
+                  .image
+                    img(src='./images/razer-pad.png', alt='RIVAL 700')
+                  .details
+                    ul
+                      li
+                        span.brand Steelseries
+                      li
+                        span.name Rival 700
+                      li
+                        span.price 2,390,000
+                        span.currency-symbol ₫
+              li.item
+                .product
+                  .image
+                    img(src='./images/fiio.jpg', alt='RIVAL 700')
+                  .details
+                    ul
+                      li
+                        span.brand Steelseries
+                      li
+                        span.name Rival 700
+                      li
+                        span.price
+                          | 2,390,000
+                          span.currency-symbol ₫
+        button
+          span.search-icon
+            img(src='./images/search-icon.png')
+      .cart-hotline-cash.col-xs-12.col-lg-4
+        .cart.left
+          a(href='#')
+            img(src='./images/cart-icon.png', alt='CART')
+          span.number-cart 1
+        .hotline-cash.right
+          .hotline
+            i.fa.fa-comments-o
+            .text
+              span.title
+                | Hotline
+                br
+              span.number
+                | 01203214160
+          .cash
+            i.fa.fa-truck
+            .text
+              span.title
+                | Cash on
+                br
+                | Delivery
