@@ -4,7 +4,7 @@ var mongoosePaginate = require('mongoose-paginate');
 var db = mongoose.connection;
 
 var CategoryModel = new mongoose.Schema({
-    categoryName: String
+    categoryName: {type : String ,require: true}
 });
 CategoryModel.plugin(mongoosePaginate);
 
@@ -22,14 +22,14 @@ module.exports.getCategoryById = function(id, callback) {
   });
 }
 
-module.exports.deleteByBrandId = function(id, callback) {
+module.exports.deleteByCategoryId = function(id, callback) {
   Category.remove({_id: id}, function(err) {
     callback(err);
   })
 }
 
 
-module.exports.updateBrandById = function(id, categoryName, callback) {
+module.exports.updateCategoryById = function(id, categoryName, callback) {
   Category.update({_id: id}, {categoryName: categoryName}, {}, function(err) {
     callback(err);
   })
@@ -37,7 +37,7 @@ module.exports.updateBrandById = function(id, categoryName, callback) {
 
 module.exports.createCategory = function(categoryName, callback) {
   var newCategory= new Category({
-    categoryName: categoryName,
+    categoryName: categoryName
   });
   newCategory.save(function(err){
     callback(err, newCategory);

@@ -4,10 +4,11 @@ var mongoosePaginate = require('mongoose-paginate');
 var db = mongoose.connection;
 
 var ProductModel = new mongoose.Schema({
-    productName: String,
-    productPrice: Number,
-    productGuarantee: Number,
-    productUpdateDate: Date,
+    productName: {type : String ,require: true},
+    productPrice: {type : Number ,require: true},
+    productQuantity: {type : Number ,require: true},
+    productGuarantee: {type : Number ,require: true},
+    productUpdateDate: {type : Date ,require: true},
     productBrandId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Brand'
@@ -47,8 +48,23 @@ module.exports.deleteByProductId = function(id, callback) {
 }
 
 
-module.exports.updateProductById = function(id, productName, productPrice, productGuarantee, productUpdateDate, productBrandId, productCategoryId, productSpecificationId, productReviewId, callback) {
-  Product.update({_id: id}, {productName: productName, productPrice: productPrice, productGuarantee: productGuarantee, productUpdateDate: productUpdateDate, productBrandId: productBrandId, productCategoryId:productCategoryId, productSpecificationId: productSpecificationId, productReviewId: productReviewId}, {}, function(err) {
+module.exports.updateProductById = function(id, productName, productPrice, productQuantity, productGuarantee, productUpdateDate, productBrandId, productCategoryId, productSpecificationId, productReviewId, callback) {
+  Product.update({_id: id}, {productName: productName,
+                             productPrice: productPrice,
+                             productQuantity: productQuantity,
+                             productGuarantee: productGuarantee,
+                             productUpdateDate: productUpdateDate,
+                             productBrandId: productBrandId,
+                             productCategoryId:productCategoryId,
+                             productSpecificationId: productSpecificationId,
+                             productReviewId: productReviewId}, {}, function(err) {
+    callback(err);
+  })
+}
+
+module.exports.updateQuantityProductById = function(id, productQuantity, productUpdateDate, callback){
+  Product.update({_id: id}, {productQuantity: productQuantity,
+                            productUpdateDate: new Date(productUpdateDate)}, {}, function(err){
     callback(err);
   })
 }
