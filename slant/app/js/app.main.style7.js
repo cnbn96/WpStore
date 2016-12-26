@@ -2,14 +2,14 @@
 angular.module('app').controller('AppCtrl', ['$scope',
     function($scope) {
 
-        var menufold = false; 
+        var menufold = false;
         var screenWidth = window.innerWidth;
         if (screenWidth < 767){
-            var menufold = true; 
-        }
+            var menufold = true;
 
-        $scope.app = {            
-            name: 'Slant Admin - Angular | Ecommerce',
+        }
+        $scope.app = {
+            name: 'Admin WpStore',
             version: '3.0.0',
             type: 'ecommerce',
             color: {
@@ -28,7 +28,7 @@ angular.module('app').controller('AppCtrl', ['$scope',
                 chatFolded: true,
                 layoutBoxed: false,
                 searchFocus: false,
-                pagetitle: 'Slant \\ AngularJS',
+                pagetitle: 'Admin WpStore \\ AngularJS',
             }
         }
         $scope.menuChatToggle = function(type, value) {
